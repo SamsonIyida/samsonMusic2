@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samson's Playlist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="text-center mt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1> <B style="color: brown;">MY PLAYLIST</B></h1>
+                </div>
+                <div class="col text-end">
+                    <a href="index.html" class="btn btn-primary">Back</a>
+                </div>
+            </div>
+        </div>
+    </header>
+<div class="container mt-4">
+    <ul class="list-group">
+        <!-- Song 1 -->
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Artist: XXXTENTACION</h2>
+                    <p><B>SONGS</B></p>
+                </div>
+            
+                <p><div class="col-12 text-center">
+                    <audio id="audio1" src="xxxtentacion/Tory_Lanez_XXXTentacion_-_Fortnite.mp3" controls></audio>
+                   <B> <figcaption>Fortnite</figcaption> </B>
+                  </div> </p>
+               <p><div class="col-12 text-center">
+                    <audio id="audio2" src="xxxtentacion/XXXTentacion_-_Alone.mp3" controls></audio>
+                   <B> <figcaption>Alone</figcaption> </B>
+                  </div> </p>
+               <p><div class="col-12 text-center">
+                   <audio id="audio3" src="xxxtentacion/XXXtentacion_-_Dutty_Freestyle_.mp3" controls></audio>
+                 <B> <figcaption>Dutty Freestyle</figcaption> </B>
+                 </div> </p>
+               <p><div class="col-12 text-center">
+                   <audio id="audio4" src="xxxtentacion/XXXTentacion_-_Hope_Olagist.co_.mp3" controls></audio>
+                 <B> <figcaption>Hope</figcaption> </B>
+                 </div> </p>
+               <p><div class="col-12 text-center">
+                   <audio id="audio5" src="xxxtentacion/XXXTentacion_-_Lets_Pretend_Were_Numb.mp3" controls></audio>
+                 <B> <figcaption>Lets Pretend Were Numb</figcaption> </B>
+                  </div> </p>
+               <p><div class="col-12 text-center">
+                   <audio id="audio6" src="xxxtentacion/Xxxtentacion_-_Riot.mp3" controls></audio>
+                 <B> <figcaption>Riot</figcaption> </B>
+                  </div> </p> 
+               <p><div class="col-12 text-center">
+                   <audio id="audio7" src="xxxtentacion/XXXTENTACION_-_Sad_[NaijaGreen.Com].mp3" controls></audio>
+                  <B> <figcaption>Sad</figcaption> </B>
+                  </div> </p> 
+               <p><div class="col-12 text-center">
+                   <audio id="audio8" src="xxxtentacion/XXXTentacion_-_The_Remedy_For_a_Broken_Heart_Why_Am_I_So_in_Love_.mp3" controls></audio>
+                 <B> <figcaption>The Remedy For a Broken Heart</figcaption> </B>
+                  </div> </p> 
+               <p><div class="col-12 text-center">
+                   <audio id="audio9" src="xxxtentacion/XXXTentacion_-_Vice_City.mp3" controls></audio>
+                 <B> <figcaption>Vice City</figcaption> </B>
+                  </div> </p>
+               <p><div class="col-12 text-center">
+                   <audio id="audio10" src="xxxtentacion/XXXTentacion_Ft_Joey_Badass_-_infinity_888__Olagist.co_.mp3" controls></audio>
+                  <B> <figcaption>Infinity 888</figcaption> </B>
+                  </div> </p> 
+
+                   <script>
+                       // Pause all audio elements except the one being played
+                       document.querySelectorAll('audio').forEach(function(audio) {
+                           audio.addEventListener('play', function() {
+                               document.querySelectorAll('audio').forEach(function(otherAudio) {
+                                   if (otherAudio !== audio) {
+                                       otherAudio.pause();
+                                   }
+                               });
+                           });
+                       });
+                   </script>
+             
+                
+              
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
